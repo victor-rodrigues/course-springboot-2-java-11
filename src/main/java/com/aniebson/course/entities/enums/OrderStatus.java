@@ -1,4 +1,4 @@
-package com.aniebson.course.entities.enuns;
+package com.aniebson.course.entities.enums;
 
 public enum OrderStatus {
 
@@ -19,9 +19,8 @@ public enum OrderStatus {
 			if (value.getCode() == code) {
 				return value;
 			}
-			throw new IllegalArgumentException("Invalid OrderStatus code");
 		}
-		return null;
+		throw new IllegalArgumentException("Invalid OrderStatus code");
 	}
 
 }
